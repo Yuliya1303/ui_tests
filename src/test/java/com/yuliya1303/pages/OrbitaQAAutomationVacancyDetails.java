@@ -13,8 +13,8 @@ public class OrbitaQAAutomationVacancyDetails {
             vacancyDescription = $(".vacancy-description"),
             vacancyType = $(".vacancy-view-employment-mode"),
             similarVacancy = $(".recommended-vacancies"),
-            emailOrPhoneField = $(".bloko-form-item"),
-            submitEmailBtn = $(".signup-submit").$(byAttribute("type","submit")),
+            emailOrPhoneField = $(byAttribute("data-qa","account-signup-email")),
+            submitEmailBtn = $(byAttribute("data-qa","account-signup-submit")),
             enterCode = $(".bloko-header-2"),
             invalidEmailOrPhoneError = $(".field-error-login_BAD_LOGIN");
 
@@ -50,6 +50,7 @@ public class OrbitaQAAutomationVacancyDetails {
 
     @Step("Enter Email")
     public OrbitaQAAutomationVacancyDetails enterEmail(String email) {
+        emailOrPhoneField.scrollTo();
         emailOrPhoneField.setValue(email);
 
         return this;
