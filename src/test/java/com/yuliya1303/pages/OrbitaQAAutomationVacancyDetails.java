@@ -11,7 +11,7 @@ public class OrbitaQAAutomationVacancyDetails {
     //locators
     SelenideElement vacancyDetailsPageTitle = $(byAttribute("data-qa","vacancy-title")),
             vacancyDescription = $(".vacancy-description"),
-            vacancyType = $(".vacancy-view-employment-mode"),
+            vacancyType = $(byAttribute("data-qa","vacancy-view-employment-mode")),
             similarVacancy = $(".recommended-vacancies"),
             emailOrPhoneField = $(byAttribute("data-qa","account-signup-email")),
             submitEmailBtn = $(byAttribute("data-qa","account-signup-submit")),
