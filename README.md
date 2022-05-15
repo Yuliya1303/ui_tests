@@ -1,4 +1,4 @@
-# Проект по автоматизации тестирования страницы деталей вакансии QA Automation в ООО "Центр Орбита" на сайте hh.ru
+# Автоматизации тестирования страницы деталей вакансии QA Automation на сайте hh.ru
 ## :link: <a target="_blank" href="https://hh.ru/vacancy/55354866?query=QA%20automation%20engineer&from=vacancy_search_catalog&hhtmFrom=vacancy_search_catalog">hh.ru - Вакансия QA Automation</a>
 
 ## :page_with_curl: Содержание:
