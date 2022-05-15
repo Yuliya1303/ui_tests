@@ -9,9 +9,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class OrbitaQAAutomationVacancyDetails {
     //locators
-    SelenideElement vacancyDetailsPageTitle = $("#a11y-main-content"),
-            applyBtn = $("[a]").find(byText("Apply")),
-            appliedText = $(".pl-14.mb-5"),
+    SelenideElement vacancyDetailsPageTitle = $("[data-qa]='vacancy-title'"),
             vacancyDescription = $(".vacancy-description"),
             vacancyType = $(".vacancy-view-employment-mode"),
             similarVacancy = $(".recommended-vacancies"),
