@@ -15,7 +15,7 @@ public class OrbitaQAAutomationVacancyDetails {
             similarVacancy = $(".recommended-vacancies"),
             emailOrPhoneField = $(byAttribute("data-qa","account-signup-email")),
             submitEmailBtn = $(byAttribute("data-qa","account-signup-submit")),
-            enterCode = $(".bloko-header-2"),
+            enterCode = $(byAttribute("data-qa","otp-code-form")),
             invalidEmailOrPhoneError = $(".field-error-login_BAD_LOGIN");
 
     //actions
