@@ -4,17 +4,17 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selectors.byAttribute;
 import static com.codeborne.selenide.Selenide.*;
 
 public class OrbitaQAAutomationVacancyDetails {
     //locators
-    SelenideElement vacancyDetailsPageTitle = $("[data-qa]='vacancy-title'"),
+    SelenideElement vacancyDetailsPageTitle = $(byAttribute("data-qa","vacancy-title")),
             vacancyDescription = $(".vacancy-description"),
             vacancyType = $(".vacancy-view-employment-mode"),
             similarVacancy = $(".recommended-vacancies"),
             emailOrPhoneField = $(".bloko-form-item"),
-            submitEmailBtn = $(".signup-submit").$("[type]='submit'"),
+            submitEmailBtn = $(".signup-submit").$(byAttribute("type","submit")),
             enterCode = $(".bloko-header-2"),
             invalidEmailOrPhoneError = $(".field-error-login_BAD_LOGIN");
 
