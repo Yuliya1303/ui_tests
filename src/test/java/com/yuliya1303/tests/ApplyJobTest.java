@@ -10,7 +10,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
 
-public class applyJobTest extends TestBase {
+public class ApplyJobTest extends TestBase {
     OrbitaQAAutomationVacancyDetails orbitaQAAutomationVacancyDetails = new OrbitaQAAutomationVacancyDetails();
 
     @Test

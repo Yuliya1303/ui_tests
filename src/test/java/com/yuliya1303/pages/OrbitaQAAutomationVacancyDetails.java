@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class OrbitaQAAutomationVacancyDetails {
     //locators
-    SelenideElement vacancyDetailsPageTitle = $(".bloko-header-1"),
+    SelenideElement vacancyDetailsPageTitle = $(byAttribute("data-qa","vacancy-title")),
             vacancyDescription = $(".vacancy-description"),
             vacancyType = $(".vacancy-view-employment-mode"),
             similarVacancy = $(".recommended-vacancies"),
