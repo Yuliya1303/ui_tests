@@ -45,8 +45,7 @@ public class ApplyJobTest extends TestBase {
             "yuliyalevkovets1303@" ////invalid data to show Failed status
     })
 
-    @ParameterizedTest
-    @DisplayName("Check that valid Email {0} is Applied")
+    @ParameterizedTest(name = "Check that valid Email {0} is Applied")
     @Owner("yuliyabyshko")
     @Severity(SeverityLevel.BLOCKER)
     @Feature("Job details")
