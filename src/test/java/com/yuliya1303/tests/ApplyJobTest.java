@@ -41,8 +41,8 @@ public class ApplyJobTest extends TestBase {
     }
 
     @ValueSource(strings = {
-            "yuliyalevkovets1303@@gmail.com", //invalid data to show Failed status
-            "yuliyalevkovets1303@" ////invalid data to show Failed status
+            "yuliyalevkovets1303@@gmail.com", //invalid data to show Failed status in Report
+            "yuliyalevkovets1303@" //invalid data to show Failed status in Report
     })
 
     @ParameterizedTest(name = "Check that valid Email {0} is Applied")
@@ -71,7 +71,7 @@ public class ApplyJobTest extends TestBase {
     @Feature("Job details")
     @Story("Jobs")
     @Tag("Smoke")
-    @Disabled //disabled to show Skipped status
+    @Disabled //disabled to show Skipped status in Report
     void checkErrorDisplayedWhenInvalidEmailEntered(String testData) {
 
         orbitaQAAutomationVacancyDetails.openPage()
