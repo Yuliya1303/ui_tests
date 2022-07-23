@@ -3,8 +3,7 @@
 
 ## :page_with_curl: Содержание:
 
-- <a href="#computer-сode_stack">Code stack</a>
-- <a href="#computer-infrastructure_stack">Infrastructure stack</a>
+- <a href="#computer-сode_stack">Технологии и инструменты</a>
 - <a href="#clipboard-реализованные-проверки">Реализованные проверки</a>
 - <a href="#robot-сборки-в-Jenkins">Сборки в Jenkins</a>
 - <a href="#keyboard-запуск-из-терминала">Запуск из терминала</a>
@@ -13,17 +12,13 @@
 - <a href="#robot-отчет-в-slack">Отчет в Slack</a>
 - <a href="#film_projector-видео-пример-прохождения-тестов">Видео пример прохождения тестов</a>
 
-## :computer: Code stack
+## :computer: Технологии и инструменты
 <p align="left">
 <img width="6%" title="Java" src="images/logo/Java.svg">
 <img width="6%" title="Selenide" src="images/logo/Selenide.svg">
 <img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
 <img width="6%" title="Gradle" src="images/logo/Gradle.svg">
 <img width="6%" title="JUnit5" src="images/logo/JUnit5.svg">
-</p>
-
-## :computer: Infrastructure stack
-<p align="left">
 <img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
 <img width="6%" title="Selenoid" src="images/logo/Selenoid.svg">
 <img width="6%" title="GitHub" src="images/logo/GitHub.svg">
