@@ -12,11 +12,9 @@ def allureVersion = "2.17.3",
     junitVersion = "5.8.2"
 
 dependencies {
-
-    implementation 'com.github.javafaker:javafaker:1.0.2'
-    implementation 'org.jetbrains:annotations:23.0.0'
-
-    testImplementation(
+        testImplementation(
+            "com.github.javafaker:javafaker:1.0.2",
+            "org.jetbrains:annotations:23.0.0",
             "com.codeborne:selenide:$selenideVersion",
             "org.junit.jupiter:junit-jupiter:$junitVersion",
             "org.slf4j:slf4j-simple:1.7.36",
@@ -46,19 +44,14 @@ tasks.withType(JavaCompile) {
 tasks.withType(Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform()
-}
-
-test {
-    useJUnitPlatform()
-    systemProperty "chromeoptions.prefs",
-            "intl.accept)languages=en"
+    systemProperty "chromeoptions.prefs"
     testLogging {
         lifecycle {
 //            events "started", "failed"
             events "started", "skipped", "failed", "standard_error", "standard_out"
             exceptionFormat "short"
         }
-    }
+}
 
     task smoke_tests(type: Test) {
         useJUnitPlatform{

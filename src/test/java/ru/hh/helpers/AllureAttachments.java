@@ -1,4 +1,4 @@
-package com.yuliya1303.helpers;
+package ru.hh.helpers;
 
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Attachment;

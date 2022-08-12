@@ -1,6 +1,6 @@
-package com.yuliya1303.tests;
+package ru.hh.tests;
 
-import com.yuliya1303.pages.OrbitaQAAutomationVacancyDetails;
+import ru.hh.pages.VacancyDetailsPage;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
@@ -11,32 +11,32 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 
 public class ApplyJobTest extends TestBase {
-    OrbitaQAAutomationVacancyDetails orbitaQAAutomationVacancyDetails = new OrbitaQAAutomationVacancyDetails();
+    VacancyDetailsPage vacancyDetailsPage = new VacancyDetailsPage();
 
     @Test
-    @DisplayName("Vacancy parameters are exists in Description")
     @Owner("yuliyabyshko")
     @Severity(SeverityLevel.BLOCKER)
     @Feature("Job details")
     @Story("Jobs")
+    @DisplayName("Vacancy parameters are exists in Description")
     void checkThatParametersExistsInDescription() {
         String framework = "Selenide";
         String workType = "удаленная работа";
 
-        orbitaQAAutomationVacancyDetails.openPage()
+        vacancyDetailsPage.openPage()
                 .checkFrameworkExistsInDescription(framework)
                 .checkTypeExistsInDescription(workType);
     }
 
     @Test
-    @DisplayName("Similar jobs block is displayed")
     @Owner("yuliyabyshko")
     @Severity(SeverityLevel.NORMAL)
     @Feature("Job details")
     @Story("Jobs")
     @Tag("Smoke")
+    @DisplayName("Similar jobs block is displayed")
     void checkThatSimilarJobBlockExists() {
-        orbitaQAAutomationVacancyDetails.openPage()
+        vacancyDetailsPage.openPage()
                 .checkSimilarVacancyNotEmpty();
     }
 
@@ -53,11 +53,11 @@ public class ApplyJobTest extends TestBase {
     @Tag("Smoke")
     void checkValidEmailIsApplied(String testData) {
 
-        orbitaQAAutomationVacancyDetails.openPage()
+        vacancyDetailsPage.openPage()
                 .enterEmail(testData)
                 .clickSubmitEmailBtn();
 
-        orbitaQAAutomationVacancyDetails.checkEnterCodeIsDisplayed();
+        vacancyDetailsPage.checkEnterCodeIsDisplayed();
     }
 
     @ValueSource(strings = {
@@ -74,11 +74,11 @@ public class ApplyJobTest extends TestBase {
     @Disabled //disabled to show Skipped status in Report
     void checkErrorDisplayedWhenInvalidEmailEntered(String testData) {
 
-        orbitaQAAutomationVacancyDetails.openPage()
+        vacancyDetailsPage.openPage()
                 .enterEmail(testData)
                 .clickSubmitEmailBtn();
 
-        orbitaQAAutomationVacancyDetails.checkInvalidEmailOrPhoneErrorIsDisplayed();
+        vacancyDetailsPage.checkInvalidEmailOrPhoneErrorIsDisplayed();
     }
 
 }

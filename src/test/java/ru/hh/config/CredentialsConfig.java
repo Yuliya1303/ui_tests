@@ -1,4 +1,4 @@
-package com.yuliya1303.config;
+package ru.hh.config;
 
 import org.aeonbits.owner.Config;
 

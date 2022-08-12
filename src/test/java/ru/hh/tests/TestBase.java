@@ -1,9 +1,9 @@
-package com.yuliya1303.tests;
+package ru.hh.tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import com.yuliya1303.config.CredentialsConfig;
-import com.yuliya1303.helpers.AllureAttachments;
+import ru.hh.config.CredentialsConfig;
+import ru.hh.helpers.AllureAttachments;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
